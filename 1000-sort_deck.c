@@ -7,9 +7,9 @@ void insertion_sort_deck_value(deck_node_t **deck);
 void sort_deck(deck_node_t **deck);
 
 /**
- * _strcmp - Compares two strings.
- * @s1: first string to be compared.
- * @s2: second string to be compared.
+ * _strcmp - Collates 2 strs.
+ * @s1: The 1st compared str.
+ * @s2: The 2nd compared str.
  *
  * Return: Positive byte difference if s1 > s2
  *         0 if s1 == s2
@@ -29,10 +29,10 @@ int _strcmp(const char *s1, const char *s2)
 }
 
 /**
- * get_value - Get the numerical value of a card.
- * @card: pointer to a deck_node_t card.
+ * get_value - Retrieves the numerical value of a card.
+ * @card: A pointer to a deck_node_t card.
  *
- * Return: numerical value of the card.
+ * Return: The arithmetic value of the card.
  */
 char get_value(deck_node_t *card)
 {
@@ -66,8 +66,8 @@ char get_value(deck_node_t *card)
 }
 
 /**
- * insertion_sort_deck_kind - Sort a deck of cards from spades to diamonds.
- * @deck: pointer to the head of a deck_node_t doubly-linked list.
+ * insertion_sort_deck_kind - Sorts a deck of cards from spades 2 diamonds.
+ * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void insertion_sort_deck_kind(deck_node_t **deck)
 {
@@ -95,9 +95,9 @@ void insertion_sort_deck_kind(deck_node_t **deck)
 }
 
 /**
- * insertion_sort_deck_value - Sort a deck of cards sorted from
- *                             spades to diamonds from ace to king.
- * @deck: pointer to the head of a deck_node_t doubly-linked list.
+ * insertion_sort_deck_value - Sorts a deck of cards sorted from
+ * spades to diamonds & from ace to king.
+ * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void insertion_sort_deck_value(deck_node_t **deck)
 {
@@ -127,9 +127,9 @@ void insertion_sort_deck_value(deck_node_t **deck)
 }
 
 /**
- * sort_deck - Sort a deck of cards from ace to king and
- *             from spades to diamonds.
- * @deck: pointer to the head of a deck_node_t doubly-linked list.
+ * sort_deck - Sorts a deck of cards from ace to king and
+ * from spades to diamonds.
+ * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void sort_deck(deck_node_t **deck)
 {
